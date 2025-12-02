@@ -13,7 +13,4 @@ public interface PostRepository extends JpaRepository<Post,Long> {
     List<Post> findByTitleContainingIgnoreCase(String title);
     List<Post> findByCreatedAtAfter(LocalDateTime createdAt);
 
-
-
-
 }
