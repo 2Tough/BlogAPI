@@ -9,6 +9,9 @@ import dev.twotough.springlab.blogapi.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Service
 public class PostService {
     @Autowired
@@ -31,20 +34,47 @@ public class PostService {
         // 3. Guardar post
         Post savedPost = postRepository.save(post);
 
-        // 4. Convertir entidad DTO
-        PostResponseDTO response = new PostResponseDTO();
-        response.setId(savedPost.getId());
-        response.setTitle(savedPost.getTitle());
-        response.setContent(savedPost.getContent());
-        response.setCategory(savedPost.getCategory());
-        response.setAuthorId(savedPost.getAuthor().getId());
-        response.setCreatedAt(savedPost.getCreatedAt());
-        response.setUpdatedAt(savedPost.getUpdatedAt());
-        response.setLikesCount(savedPost.getLikesCount());
-        response.setCommentsCount(savedPost.getComments().size());
+        // 4. Convertir DTO usando helper
+        return convertToDTO(savedPost);
+    }
+
+        // Listar posts
+
+    public List<PostResponseDTO> getAllPosts() {
+        List<Post> posts = postRepository.findAll();
+        List<PostResponseDTO> response = new ArrayList<>();
+
+        for (Post post : posts) {
+            response.add(convertToDTO(post));
+        }
+
+        return response;
+    }
+
+        // Metodo helper
+    private PostResponseDTO convertToDTO(Post savedPost) {
+        PostResponseDTO dto = new PostResponseDTO();
+
+        dto.setId(savedPost.getId());
+        dto.setTitle(savedPost.getTitle());
+        dto.setContent(savedPost.getContent());
+        dto.setCategory(savedPost.getCategory());
+        dto.setAuthorId(savedPost.getAuthor().getId());
+        dto.setAuthorUsername(savedPost.getAuthor().getUsername());
+        dto.setCreatedAt(savedPost.getCreatedAt());
+        dto.setUpdatedAt(savedPost.getUpdatedAt());
+        dto.setLikesCount(savedPost.getLikesCount());
+        dto.setCommentsCount(savedPost.getComments().size());
 
         // 5. Devolver DTO
-        return response;
+        return dto;
+    }
+
+    private PostResponseDTO getPostById(Long id) {
+        Post post = postRepository.findById(id).orElseThrow(() -> new RuntimeException("Post no encontrado"));
+        return convertToDTO(post);
 
     }
+
+
 }
