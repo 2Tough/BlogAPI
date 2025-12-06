@@ -4,6 +4,7 @@ import dev.twotough.springlab.blogapi.Post;
 import dev.twotough.springlab.blogapi.User;
 import dev.twotough.springlab.blogapi.dto.CreatePostRequestDTO;
 import dev.twotough.springlab.blogapi.dto.PostResponseDTO;
+import dev.twotough.springlab.blogapi.dto.UpdatePostRequestDTO;
 import dev.twotough.springlab.blogapi.repository.PostRepository;
 import dev.twotough.springlab.blogapi.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -70,11 +71,35 @@ public class PostService {
         return dto;
     }
 
-    private PostResponseDTO getPostById(Long id) {
+    public PostResponseDTO getPostById(Long id) {
         Post post = postRepository.findById(id).orElseThrow(() -> new RuntimeException("Post no encontrado"));
         return convertToDTO(post);
 
     }
 
+    public PostResponseDTO updatePost(Long id,  UpdatePostRequestDTO request) {
+        // 1. Buscar post
+        Post post = postRepository.findById(id).orElseThrow(() -> new RuntimeException("Post no encontrado"));
+
+        // 2. Actualizar post
+        post.setTitle(request.getTitle());
+        post.setContent(request.getContent());
+        post.setCategory(request.getCategory());
+
+        // 3. Devolver post actualizado
+        Post updatedPost = postRepository.save(post);
+
+        // 4. Convertir a DTO
+        return convertToDTO(updatedPost);
+
+    }
+
+    public void deletePost(Long id) {
+        if (!postRepository.existsById(id)) {
+            throw new RuntimeException("Post no encontrado");
+        }
+        postRepository.deleteById(id);
+
+    }
 
 }
