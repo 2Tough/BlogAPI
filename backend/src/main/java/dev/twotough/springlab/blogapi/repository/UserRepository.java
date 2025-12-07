@@ -1,6 +1,6 @@
 package dev.twotough.springlab.blogapi.repository;
 
-import dev.twotough.springlab.blogapi.User;
+import dev.twotough.springlab.blogapi.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

@@ -1,6 +1,5 @@
 package dev.twotough.springlab.blogapi.controller;
 
-import dev.twotough.springlab.blogapi.Post;
 import dev.twotough.springlab.blogapi.dto.CreatePostRequestDTO;
 import dev.twotough.springlab.blogapi.dto.PostResponseDTO;
 import dev.twotough.springlab.blogapi.dto.UpdatePostRequestDTO;

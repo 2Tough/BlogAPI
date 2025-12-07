@@ -1,4 +1,4 @@
-package dev.twotough.springlab.blogapi;
+package dev.twotough.springlab.blogapi.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

@@ -1,5 +1,6 @@
 package dev.twotough.springlab.blogapi;
 
+import dev.twotough.springlab.blogapi.model.User;
 import dev.twotough.springlab. blogapi.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;

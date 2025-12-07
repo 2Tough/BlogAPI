@@ -1,7 +1,7 @@
 package dev.twotough.springlab.blogapi.service;
 
-import dev.twotough.springlab.blogapi.Post;
-import dev.twotough.springlab.blogapi.User;
+import dev.twotough.springlab.blogapi.model.Post;
+import dev.twotough.springlab.blogapi.model.User;
 import dev.twotough.springlab.blogapi.dto.CreatePostRequestDTO;
 import dev.twotough.springlab.blogapi.dto.PostResponseDTO;
 import dev.twotough.springlab.blogapi.dto.UpdatePostRequestDTO;
