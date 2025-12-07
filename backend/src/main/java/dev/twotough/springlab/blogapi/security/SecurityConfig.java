@@ -13,7 +13,15 @@ public class SecurityConfig {
     // Bean 1: Configurar qué rutas están protegidas
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-        // TODO: Tu código aquí
+        http
+                .csrf(csrf -> csrf.disable())  // Desactivar CSRF (para APIs REST)
+                .authorizeHttpRequests(auth -> auth
+                        .requestMatchers("/api/auth/**"). permitAll()   // ← Login/Register
+                        .requestMatchers("/api/posts/**").permitAll()  // Rutas públicas
+                        .anyRequest().authenticated()              // Resto requiere auth
+                );
+
+        return http.build();
     }
 
     // Bean 2: Encoder para encriptar passwords
