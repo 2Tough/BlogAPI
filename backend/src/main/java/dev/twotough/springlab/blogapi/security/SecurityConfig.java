@@ -17,8 +17,12 @@ public class SecurityConfig {
                 .csrf(csrf -> csrf.disable())  // Desactivar CSRF (para APIs REST)
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers("/api/auth/**"). permitAll()   // ← Login/Register
-                        .requestMatchers("/api/posts/**").permitAll()  // Rutas públicas
+                        .requestMatchers("/api/posts/**").permitAll()
+                        .requestMatchers("/h2-console/**").permitAll() // Rutas públicas
                         .anyRequest().authenticated()              // Resto requiere auth
+                )
+                .headers(headers -> headers
+                        .frameOptions(frame -> frame.disable())
                 );
 
         return http.build();
