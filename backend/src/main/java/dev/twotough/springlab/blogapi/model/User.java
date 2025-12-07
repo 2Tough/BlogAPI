@@ -28,6 +28,9 @@ public class User {
     @Column(nullable = false)
     private String email;
 
+    @Column(nullable = true)
+    private String password;
+
     @OneToMany(mappedBy = "author", cascade = CascadeType.ALL)
     private List<Post> posts = new ArrayList<>();  // ← Agrega <Post>
 
