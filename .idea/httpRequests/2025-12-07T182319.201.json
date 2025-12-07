@@ -1,0 +1,12 @@
+{
+  "id": 1,
+  "title": "Mi primer post",
+  "content": "Este es el contenido de mi post de prueba",
+  "category": "Tech",
+  "authorId": 1,
+  "authorUsername": "2Tough",
+  "createdAt": "2025-12-07T18:23:18.9861965",
+  "updatedAt": null,
+  "likesCount": 0,
+  "commentsCount": 0
+}

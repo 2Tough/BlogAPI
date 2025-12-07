@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="45606a68-e30b-4e8a-a69b-74205d093506" name="Changes" comment="Added AuthResponse and completed RegisterRequest &amp; LoginRequest.">
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/dev/twotough/springlab/blogapi/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/dev/twotough/springlab/blogapi/security/SecurityConfig.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;2Tough&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/2Tough/BlogAPI.git&quot;,
+    &quot;accountId&quot;: &quot;dbbb7387-5d6b-4afe-a37f-0e13c45ea908&quot;
+  }
+}</component>
+  <component name="HttpClientOnboardingState">{
+  &quot;isOnboardingCommentShown&quot;: true
+}</component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="367dTapLb3aWPMkjD86kWDTatta" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "HTTP Request.rest-api | #1.executor": "Run",
+    "HTTP Request.rest-api | #2.executor": "Run",
+    "HTTP Request.rest-api | Crear un Post.executor": "Run",
+    "HTTP Request.rest-api_1 | #10.executor": "Run",
+    "HTTP Request.rest-api_1 | #2.executor": "Run",
+    "HTTP Request.rest-api_1 | #7.executor": "Run",
+    "HTTP Request.rest-api_1 | #8.executor": "Run",
+    "HTTP Request.rest-api_1 | #9.executor": "Run",
+    "HTTP Request.rest-api_1 | Actualizar un post.executor": "Run",
+    "HTTP Request.rest-api_1 | Crear un Post.executor": "Run",
+    "HTTP Request.rest-api_1 | Crear un post para luego eliminarlo.executor": "Run",
+    "HTTP Request.rest-api_1 | Crear un usuario (para probar).executor": "Run",
+    "HTTP Request.rest-api_1 | Obtener post por ID.executor": "Run",
+    "HTTP Request.rest-api_3 | #1.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Notification.DisplayName-DoNotAsk-vcs.commit.checks.failed": "Commit and push checks failed",
+    "Notification.DisplayName-DoNotAsk-vcs.commit.finished": "5 files committed",
+    "Notification.DoNotAsk-vcs.commit.checks.failed": "true",
+    "Notification.DoNotAsk-vcs.commit.finished": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "Spring Boot.BlogApiApplication.executor": "Run",
+    "deletionFromPopupRequiresConfirmation": "false",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Valentin/Documents/Java/Intellij Projects/BlogAPI",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "DockerRegistry",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Valentin\Documents\Java\Intellij Projects\BlogAPI\frontend\src\components" />
+      <recent name="C:\Users\Valentin\Documents\Java\Intellij Projects\BlogAPI\backend" />
+      <recent name="C:\Users\Valentin\Documents\Java\Intellij Projects\BlogAPI\src" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="excludedTypes">
+      <set>
+        <option value="HttpClient.HttpRequestRunConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.BlogApiApplication">
+    <configuration name="rest-api_3 | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api_3.http" executionIdentifier="#1" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="BlogApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="BlogAPI" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="dev.twotough.springlab.blogapi.BlogApiApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.rest-api_3 | #1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.27397.103" />
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-IU-252.27397.103" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="45606a68-e30b-4e8a-a69b-74205d093506" name="Changes" comment="" />
+      <created>1764361552584</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1764361552584</updated>
+      <workItem from="1764361554086" duration="4900000" />
+      <workItem from="1764407282204" duration="1617000" />
+      <workItem from="1764495105444" duration="599000" />
+      <workItem from="1764596339458" duration="7950000" />
+      <workItem from="1764663277249" duration="14093000" />
+      <workItem from="1764759287102" duration="2830000" />
+      <workItem from="1764840546086" duration="2748000" />
+      <workItem from="1764967090653" duration="327000" />
+      <workItem from="1765030265457" duration="4950000" />
+      <workItem from="1765035245805" duration="4299000" />
+      <workItem from="1765039567181" duration="173000" />
+      <workItem from="1765039762102" duration="311000" />
+      <workItem from="1765040824465" duration="4077000" />
+      <workItem from="1765055549774" duration="539000" />
+      <workItem from="1765056100405" duration="5645000" />
+      <workItem from="1765099478365" duration="15735000" />
+    </task>
+    <task id="LOCAL-00001" summary="Added repository interfaces">
+      <option name="closed" value="true" />
+      <created>1764614571842</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1764614571842</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added PostController">
+      <option name="closed" value="true" />
+      <created>1764713767075</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1764713767075</updated>
+    </task>
+    <task id="LOCAL-00003" summary="List all posts added.">
+      <option name="closed" value="true" />
+      <created>1765032042171</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1765032042171</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Implemented post deletion">
+      <option name="closed" value="true" />
+      <created>1765038020420</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1765038020420</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Test connection working">
+      <option name="closed" value="true" />
+      <created>1765058668162</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1765058668162</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added Post creation. Need to correct problem with author ID creation as backend expects authorID from frontend. Idea is to implement registration/login page.">
+      <option name="closed" value="true" />
+      <created>1765128047933</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1765128047933</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Created security package, added SecurityConfig.java. Todo: Complete class.">
+      <option name="closed" value="true" />
+      <created>1765138162620</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1765138162620</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Completed JwtService">
+      <option name="closed" value="true" />
+      <created>1765140107148</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1765140107148</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Added AuthResponse and completed RegisterRequest &amp; LoginRequest.">
+      <option name="closed" value="true" />
+      <created>1765141970992</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1765141970992</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added repository interfaces" />
+    <MESSAGE value="Added PostController" />
+    <MESSAGE value="List all posts added." />
+    <MESSAGE value="Implemented post deletion" />
+    <MESSAGE value="Test connection working" />
+    <MESSAGE value="Added Post creation. Need to correct problem with author ID creation as backend expects authorID from frontend. Idea is to implement registration/login page." />
+    <MESSAGE value="Created security package, added SecurityConfig.java. Todo: Complete class." />
+    <MESSAGE value="Completed JwtService" />
+    <MESSAGE value="Added AuthResponse and completed RegisterRequest &amp; LoginRequest." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added AuthResponse and completed RegisterRequest &amp; LoginRequest." />
+  </component>
+</project>
