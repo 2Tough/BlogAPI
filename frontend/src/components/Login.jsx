@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
-import { register } from '../services/authService';
+import { login } from '../services/authService';
 import './Auth.css';  // Vamos a crear este CSS después
 
-function Register({ onRegisterSuccess }) {
+function Login({ onLoginSuccess }) {
     // 1. ESTADOS (para guardar lo que escribe el usuario)
     const [username, setUsername] = useState('');
-    const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
     const [isSubmitting, setIsSubmitting] = useState(false);
@@ -19,13 +18,16 @@ function Register({ onRegisterSuccess }) {
 
         try {
             // TODO: Llama a la función register del servicio
-            // await register(?? ?, ??? , ???);
-            const response = await register(username, email, password)
-            alert('✅ Usuario registrado exitosamente!');
+            // await login(?? ?, ??? , ???);
+            const response = await login(username, password)
+            alert('✅ Usuario logeado exitosamente!');
+            if (onLoginSuccess) {
+                onLoginSuccess();
+            }
 
-            } catch (err) {
+        } catch (err) {
             // Si hubo error, lo mostramos
-            setError(err.message || 'Error al registrar usuario');
+            setError(err.message || 'Error al logear usuario');
         } finally {
             setIsSubmitting(false);  // Habilitamos el botón de nuevo
         }
@@ -35,7 +37,7 @@ function Register({ onRegisterSuccess }) {
     return (
         <div className="auth-container">
             <div className="auth-card">
-                <h2>📝 Registro</h2>
+                <h2>📝 Login</h2>
 
                 {/* Mostrar mensaje de error si existe */}
                 {error && (
@@ -60,20 +62,6 @@ function Register({ onRegisterSuccess }) {
                     </div>
 
                     <div className="form-group">
-                        <label htmlFor="email">Email</label>
-                        <input
-                            type="email"
-                            id="email"
-                            value={email}
-                            onChange={(e) => setEmail(e.target. value)}
-                            placeholder="Elige un email"
-                            required
-                            disabled={isSubmitting}
-                        />
-                    </div>
-
-
-                    <div className="form-group">
                         <label htmlFor="password">Password</label>
                         <input
                             type="password"
@@ -91,7 +79,7 @@ function Register({ onRegisterSuccess }) {
                         className="btn-submit"
                         disabled={isSubmitting}
                     >
-                        {isSubmitting ? '🔄 Registrando...' : '✨ Registrarse'}
+                        {isSubmitting ? '🔄 Logeando...' : '✨ Logeado'}
                     </button>
                 </form>
             </div>
@@ -99,4 +87,4 @@ function Register({ onRegisterSuccess }) {
     );
 }
 
-export default Register;
+export default Login;
