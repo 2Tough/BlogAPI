@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { register } from '../services/authService';
-import './Auth.css';  // Vamos a crear este CSS después
+import './Auth.css';
 
 function Register({ onRegisterSuccess }) {
     // 1. ESTADOS (para guardar lo que escribe el usuario)
