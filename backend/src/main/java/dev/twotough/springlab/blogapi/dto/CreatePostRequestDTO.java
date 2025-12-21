@@ -13,6 +13,6 @@ public class CreatePostRequestDTO {
     private String title;
     private String content;
     private String category;
-    private Long authorId;
+    private String authorUsername;
 
 }

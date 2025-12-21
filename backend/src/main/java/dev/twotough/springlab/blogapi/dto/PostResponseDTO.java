@@ -18,7 +18,6 @@ public class PostResponseDTO {
     private String category;
 
     // Información del autor (solo datos públicos)
-    private Long authorId;
     private String authorUsername;
     // private String authorEmail;  ← Comentado por privacidad
 
